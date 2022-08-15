@@ -13,7 +13,7 @@ const PostList = ({ posts, removePost }) => {
     <ul className="flex flex-col gap-y-4">
       {posts.map((post, index) => (
         <Post
-          id={index + 1}
+          id={post.id}
           key={post.id}
           post={post}
           removePost={removePost}

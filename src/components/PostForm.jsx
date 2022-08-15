@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const PostForm = ({ addPost }) => {
+const PostForm = ({ addPost, setVisible }) => {
   const [post, setPost] = useState({ title: "", body: "" });
 
   const addNewPost = (evt) => {
@@ -11,6 +11,7 @@ const PostForm = ({ addPost }) => {
     };
     addPost(newPost);
     setPost({ title: "", body: "" });
+    setVisible(false)
   };
 
   return (
@@ -35,7 +36,7 @@ const PostForm = ({ addPost }) => {
         onChange={(evt) => setPost({ ...post, body: evt.target.value })}
       />
       <button
-        className="flex w-fit transition hover:text-rose-600 disabled:text-gray-400"
+        className="flex w-fit bg-teal-600 p-2 text-white rounded-md transition hover:bg-teal-700 disabled:bg-gray-300"
         onClick={(evt) => addNewPost(evt)}
       >
         Добавить

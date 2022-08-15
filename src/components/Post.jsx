@@ -3,7 +3,7 @@ import React from "react";
 const Post = ({ id, post, removePost }) => {
 
   return (
-    <li className="flex justify-between items-center border border-teal-400 rounded-xl p-4 transition hover:shadow-lg">
+    <li className="flex justify-between items-center border border-teal-400/10 rounded-xl p-4 transition hover:shadow-lg bg-white">
       <div>
         <h2 className="text-xl text-teal-600">
           <span className="text-2xl text-rose-600">{id}. </span>
