@@ -9,7 +9,7 @@ const Popup = ({ children, visible, setVisible }) => {
           initial={{ height: 0, opacity: 0 }}
           animate={{ height: 'auto', opacity: 1 }}
           exit={{ height: 0, opacity: 0 }}
-          className="backdrop-blur-xl absolute top-0 bottom-0 left-0 right-0 justify-center items-center bg-teal-50/25 z-20 flex"
+          className="backdrop-blur-xl absolute top-0 bottom-0 left-0 right-0 justify-center items-center z-20 flex"
           onClick={() => setVisible(false)}
         >
           <div

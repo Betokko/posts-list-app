@@ -41,9 +41,8 @@ const Posts = () => {
   const removePost = (post) => setPosts(posts.filter((p) => p.id !== post.id));
 
   return (
-    <div className="bg-teal-50/50">
-      <div className="mx-auto max-w-3xl p-8">
-        <h1 className="text-3xl text-center text-rose-600 mb-8">To Do App</h1>
+      <div className="mx-auto max-w-3xl p-8 ">
+        <h1 className="text-3xl text-center text-rose-600 mb-8">Список постов</h1>
         <Button onClick={() => setVisible(true)}>Добавить пост</Button>
         <PostFilter filter={filter} setFilter={setFilter} />
         {error ? <h1 className="text-3xl text-center text-rose-600 mb-8">{error}</h1> : null}
@@ -56,8 +55,6 @@ const Posts = () => {
           <PostForm addPost={addPost} setVisible={setVisible} />
         </Popup>
       </div>
-    </div>
-
   );
 };
 
