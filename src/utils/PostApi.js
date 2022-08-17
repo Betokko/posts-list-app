@@ -10,4 +10,8 @@ export default class API {
       })
       return res
   }
+  static async getById(id) {
+      const res = await axios.get('https://jsonplaceholder.typicode.com/posts/' + id)
+      return res
+  }
 }

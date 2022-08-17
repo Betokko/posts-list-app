@@ -12,11 +12,11 @@ const PostList = ({ posts, removePost }) => {
   return (
     <ul className="flex flex-col gap-y-4">
       {posts.map((post, index) => (
-        <AnimatePresence exitBeforeEnter>
+        <AnimatePresence>
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{delay: index*0.25}}
+            transition={{ delay: index * 0.15 }}
             exit={{ opacity: 0 }}
           >
             <Post
