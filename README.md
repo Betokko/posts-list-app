@@ -12,3 +12,4 @@
 
 ## ✔ Деплой
 Ссылка на приложение в Vercel
+https://posts-list-app.vercel.app/
