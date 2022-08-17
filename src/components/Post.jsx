@@ -1,7 +1,6 @@
 import React from "react";
 
 const Post = ({ id, post, removePost }) => {
-
   return (
     <li className="flex justify-between items-center border border-teal-400/10 rounded-xl p-4 transition hover:shadow-lg bg-white">
       <div>
@@ -12,7 +11,10 @@ const Post = ({ id, post, removePost }) => {
         <p>{post.body}</p>
       </div>
       <div>
-        <button onClick={() => removePost(post)} className="transition hover:text-rose-600">
+        <button
+          onClick={() => removePost(post)}
+          className="transition hover:text-rose-600"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6"

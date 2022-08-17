@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Pagination = (props) => {
   return (
@@ -7,7 +8,7 @@ const Pagination = (props) => {
         <li key={p}>
           <button
             className={`${
-              props.page === p ? 'text-rose-600 underline' : ''
+              props.page === p ? "text-rose-600 underline" : ""
             } text-xl after:p-2 hover:text-rose-600 `}
             onClick={() => props.changePage(p)}
           >
